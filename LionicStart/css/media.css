@@ -1,0 +1,145 @@
+@media (max-width:1200px) {
+
+    .form-input,
+    .form-select {
+        width: 100%;
+    }
+    /* .header__nav {
+        display: none;
+    } */
+}
+
+@media (max-width:992px) {
+    .header__nav {
+        display: none;
+    }
+
+    .header__btn {
+        margin-right: 7px;
+        padding: 11px 21px;
+    }
+
+    .hero__content {
+        max-width: 75%;
+    }
+
+    .services-list {
+        --offsets: 2;
+    }
+
+    .clients-list {
+        --offsets: 1;
+    }
+
+    .footer__left {
+        margin-bottom: var(--gap);
+    }
+    .burger{
+        display: block;
+    }
+    /* */ 
+    .header.open .burger__line:nth-child(2){
+        opacity: 0;
+    } 
+    .header.open .burger__line:nth-child(1){
+        transform: rotate(45deg);
+    } 
+    .header.open .burger__line:nth-child(3){
+        transform: rotate(-45deg);
+    } 
+    .header.open .header__nav{
+        display: block;
+    }
+    .header.open .nav__list {
+        position: absolute;
+        background-color: rgba(80, 80, 78, 0.689);
+        padding: 50px;
+        top:100px;
+        right:0px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        /* padding-top: 35px; */
+    }
+    .header.open .nav__link{
+        color:white;
+        line-height: 45px;
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .hero {
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+
+    .services-list {
+        --offsets: 1;
+    }
+
+    .section-offset {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .blog-preview-link {
+        flex-direction: column;
+    }
+
+    .form {
+        padding: 0px;
+    }
+
+    .footer .nav__item:not(:last-child) {
+        margin-right: 12px;
+    }
+
+    .footer__nav {
+        margin-right: 15px;
+    }
+}
+
+@media (max-width:576px) {
+    .clients-list {
+        --offsets: 0;
+    }
+
+    .articles-list {
+        --offsets: 0;
+    }
+
+    .contact-list {
+        --offsets: 0;
+    }
+
+    .footer__right {
+        flex-direction: column;
+    }
+
+    .header__logo {
+        width: 80px;
+        height: 30px;
+    }
+
+    .hero {
+        padding-top: 12px;
+    }
+
+    .hero__content {
+        max-width: 95%;
+    }
+    .hero__title {
+        margin: 0;
+        margin-bottom: 16px;}
+        .header__btn {
+            margin-right: 7px;
+            padding: 10px 12px;
+        }
+        .section__title {
+            text-align: left;
+        } 
+
+}
